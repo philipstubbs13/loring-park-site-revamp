@@ -11,6 +11,8 @@ import {
 import './App.css';
 // import NavBar component
 import NavBar from './components/NavBar';
+// import Footer component
+import Footer from './components/Footer';
 // import containers/pages
 import Home from './containers/Home';
 import About from './containers/About';
@@ -38,6 +40,7 @@ class App extends Component {
                 </Switch>
               </div>
             </div>
+            <Footer />
           </div>
         </Router>
       </div>

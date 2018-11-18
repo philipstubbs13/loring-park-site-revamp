@@ -1,0 +1,33 @@
+:root {
+	--background-opacity: 0.9;
+	--main-bg-color: aliceblue;
+	--app-secondary-color: #2c387e;
+	--app-light-color: aliceblue;
+	--app-dark-color: black;
+	--app-transparent-color: rgba(0, 0, 0, 0);
+	/* --app-card-color: ; */
+	--form-error-color: red;
+  --app-chart-color: #fff;
+}
+
+.app-pages {
+  margin: 4rem;
+}
+
+/* .App {
+  background-color: var(--main-bg-color);
+} */
+
+.page-container {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  min-height: calc(100vh - 100px);
+  text-align: center;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--app-dark-color);
+}
