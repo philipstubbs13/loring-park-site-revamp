@@ -11,6 +11,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const styles = theme => ({
   root: {
@@ -132,24 +133,36 @@ class NavBar extends React.Component {
             <div className={classes.grow} />
             <Hidden smDown>
               <div className={classes.sectionDesktop}>
-                <IconButton color="inherit">
-                  <i className="fas fa-home" />
-                </IconButton>
-                <IconButton color="inherit">
-                  <i className="fas fa-info-circle" />
-                </IconButton>
-                <IconButton color="inherit">
-                  <i className="fas fa-calendar-alt" />
-                </IconButton>
-                <IconButton color="inherit">
-                  <i className="fas fa-donate" />
-                </IconButton>
-                <IconButton color="inherit">
-                  <i className="far fa-images" />
-                </IconButton>
-                <IconButton color="inherit">
-                  <i className="fas fa-at" />
-                </IconButton>
+                <Tooltip title="Home" placement="bottom">
+                  <IconButton color="inherit">
+                    <i className="fas fa-home" />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title="About" placement="bottom">
+                  <IconButton color="inherit">
+                    <i className="fas fa-info-circle" />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title="Events" placement="bottom">
+                  <IconButton color="inherit">
+                    <i className="fas fa-calendar-alt" />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title="Donate" placement="bottom">
+                  <IconButton color="inherit">
+                    <i className="fas fa-donate" />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title="Gallery" placement="bottom">
+                  <IconButton color="inherit">
+                    <i className="far fa-images" />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title="Connect" placement="bottom">
+                  <IconButton color="inherit">
+                    <i className="fas fa-at" />
+                  </IconButton>
+                </Tooltip>
               </div>
             </Hidden>
             <div className={classes.sectionMobile}>
