@@ -25,6 +25,10 @@ const styles = () => ({
   aboutLeft: {
     textAlign: 'center',
   },
+  aboutImage: {
+    borderWidth: 2,
+    borderStyle: 'solid',
+  }
 });
 
 class About extends Component {
@@ -37,7 +41,7 @@ class About extends Component {
             <Typography variant="h3" className={classes.pageTitle}>About</Typography>
           </Grid>
           <Grid item xs={12} sm={12} md={4} className={classes.aboutLeft}>
-            <img src={parkBench} alt="park bench" />
+            <img src={parkBench} alt="park bench" className={classes.aboutImage} />
           </Grid>
           <Grid item xs={12} sm={12} md={8} className="about-right">
             <div className={classes.aboutPark}>
@@ -55,7 +59,7 @@ class About extends Component {
               </Typography>
             </div>
             <div className={classes.aboutFriends}>
-              <Typography variant="h4">About the friends of loring park</Typography>
+              <Typography variant="h4">About friends of loring park</Typography>
               <Typography variant="subtitle1" className={classes.aboutFriendsP1}>
                 The Friends of Loring Park is a volunteer organization that
                 promotes the preservation and improvement of Loring Park and

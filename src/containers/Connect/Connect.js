@@ -114,7 +114,7 @@ class Connect extends Component {
               <Grid item xs={12} sm={12} md={6}>
                 <Typography variant="subtitle1">
                   <Button variant="outlined">
-                    <a href="mailto:davidthile@juno.com; rwhite@visi.com">Send email</a>
+                    <a href="mailto:davidthile@juno.com; rwhite@visi.com">Email us</a>
                   </Button>
                 </Typography>
               </Grid>
