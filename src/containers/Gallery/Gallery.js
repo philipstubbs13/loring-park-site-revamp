@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Gallery extends Component {
   render() {
     return (
-      <div>
+      <div className="page-container">
         <h1>Gallery</h1>
       </div>
     );

@@ -1,8 +1,12 @@
+// Global import of react
 import React from 'react';
+// Import PropTypes for prop checking/validation
 import PropTypes from 'prop-types';
+// import third-party routing library (react-router-dom)
+import { Link } from 'react-router-dom';
+// import material ui components and styling
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
@@ -35,10 +39,12 @@ function Footer(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
-            <i className="fab fa-facebook fa-2x" />
-          </Button>
-          <Button size="small" color="primary">
+          <a href="https://www.facebook.com/LoringParkGardens/?fref=ts" target="_blank" rel="noopener noreferrer">
+            <Button size="small" color="primary">
+              <i className="fab fa-facebook fa-2x" />
+            </Button>
+          </a>
+          <Button size="small" color="primary" component={Link} to="/about">
             <i className="fas fa-info-circle fa-2x" />
           </Button>
         </CardActions>
