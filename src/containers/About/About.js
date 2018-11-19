@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 // import image
 import parkBench from '../../images/park_bench.jpg';
 
@@ -22,13 +25,10 @@ const styles = () => ({
   aboutFriendsP2: {
     marginTop: 10,
   },
-  aboutLeft: {
-    textAlign: 'center',
-  },
   aboutImage: {
     borderWidth: 2,
     borderStyle: 'solid',
-  }
+  },
 });
 
 class About extends Component {
@@ -42,6 +42,63 @@ class About extends Component {
           </Grid>
           <Grid item xs={12} sm={12} md={4} className={classes.aboutLeft}>
             <img src={parkBench} alt="park bench" className={classes.aboutImage} />
+            <div className={classes.boardMembers}>
+              <Typography variant="h6" className={classes.title}>
+                Friends of Loring Park Board Memebers
+              </Typography>
+              <List>
+                <ListItem>
+                  <ListItemText
+                    primary="David Hile"
+                    secondary="President"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Todd Miller"
+                    secondary="Vice President"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Richard Anderson"
+                    secondary="Treasurer"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Ede Holmen"
+                    secondary="Secretary"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Pat Davies"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Lee Frelich"
+                    secondary="Immediate Past President"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Marcia Stout"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Bill Tresch"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Kia Thompson"
+                  />
+                </ListItem>
+              </List>
+            </div>
           </Grid>
           <Grid item xs={12} sm={12} md={8} className="about-right">
             <div className={classes.aboutPark}>
@@ -70,22 +127,6 @@ class About extends Component {
                 the “friends” provide the public with a park that is both
                 environmentally and socially sound.
               </Typography>
-              <div className={classes.boardMembers}>
-                <Typography variant="p">
-                  2018 Friends of Loring Park Board Members
-                </Typography>
-                <ul>
-                  <li>David Hile, President</li>
-                  <li>Todd Miller, Vice President</li>
-                  <li>Richard Anderson, Treasurer</li>
-                  <li>Ede Holmen, Secretary</li>
-                  <li>Pat Davies</li>
-                  <li>Lee Frelich,Immediate Past President</li>
-                  <li>Marcia Stout</li>
-                  <li>Bill Tresch</li>
-                  <li>Kia Thompson</li>
-                </ul>
-              </div>
             </div>
           </Grid>
         </Grid>

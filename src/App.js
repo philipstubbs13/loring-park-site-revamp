@@ -36,7 +36,7 @@ class App extends Component {
                   <Route exact path="/events" component={Events} />
                   <Route exact path="/donate" component={Donate} />
                   <Route exact path="/gallery" component={Gallery} />
-                  <Route exact path="/connect" component={Connect} />  
+                  <Route exact path="/connect" component={Connect} />
                 </Switch>
               </div>
             </div>
